@@ -7,6 +7,9 @@ Paper has been developed primarily with modern GTK3 (GNOME-based) desktop enviro
 
 Paper is distributed under the terms the GNU General Public License (GNU GPL v.3).
 
+**This Fork has the "boxed" title buttons present in older versions of Paper. Enjoy!**
+![screenshot](screenshot.png)
+
 ###Getting Paper
 
 You can download the Paper [here](http://snwh.org/paper) or it clone from the [git repository](https://github.com/snwh/paper-gtk-theme).
