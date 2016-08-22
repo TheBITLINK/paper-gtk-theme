@@ -2518,7 +2518,7 @@ GraniteWidgetsWelcome {
     border-radius: 0; }
   .default-decoration.titlebar:not(headerbar),
   .header-bar.default-decoration {
-    padding: 6px;
+    padding: 0 8px;
     background-color: #546e7a;
     color: #ffffff; }
     .default-decoration.titlebar:not(headerbar) .maximized,
@@ -2593,13 +2593,14 @@ GraniteWidgetsWelcome {
     margin: 0;
     padding: 10px;
     text-shadow: none; }
-    .titlebar:not(headerbar) .button.back-button, .titlebar:not(headerbar) .button.suggested-action, .titlebar:not(headerbar) .button.menu-button, .titlebar:not(headerbar) .button.text-button, .titlebar:not(headerbar) .button.image-button, .titlebar:not(headerbar) .button.linked, .titlebar:not(headerbar) .button.flat,
+    .titlebar:not(headerbar) .button.back-button, .titlebar:not(headerbar) .button.suggested-action, .titlebar:not(headerbar) .button.menu-button, .titlebar:not(headerbar) .button.text-button, .titlebar:not(headerbar) .button.image-button, .titlebar:not(headerbar) .button.linked, .titlebar:not(headerbar) .button.titlebutton, .titlebar:not(headerbar) .button.flat,
     .header-bar .button.back-button,
     .header-bar .button.suggested-action,
     .header-bar .button.menu-button,
     .header-bar .button.text-button,
     .header-bar .button.image-button,
     .header-bar .button.linked,
+    .header-bar .button.titlebutton,
     .header-bar .button.flat {
       background-color: transparent;
       background-image: none;
@@ -2611,25 +2612,27 @@ GraniteWidgetsWelcome {
       padding: 10px;
       text-shadow: none;
       color: #ffffff; }
-      .titlebar:not(headerbar) .button.back-button:backdrop, .titlebar:not(headerbar) .button.suggested-action:backdrop, .titlebar:not(headerbar) .button.menu-button:backdrop, .titlebar:not(headerbar) .button.text-button:backdrop, .titlebar:not(headerbar) .button.image-button:backdrop, .titlebar:not(headerbar) .button.linked:backdrop, .titlebar:not(headerbar) .button.flat:backdrop,
+      .titlebar:not(headerbar) .button.back-button:backdrop, .titlebar:not(headerbar) .button.suggested-action:backdrop, .titlebar:not(headerbar) .button.menu-button:backdrop, .titlebar:not(headerbar) .button.text-button:backdrop, .titlebar:not(headerbar) .button.image-button:backdrop, .titlebar:not(headerbar) .button.linked:backdrop, .titlebar:not(headerbar) .button.titlebutton:backdrop, .titlebar:not(headerbar) .button.flat:backdrop,
       .header-bar .button.back-button:backdrop,
       .header-bar .button.suggested-action:backdrop,
       .header-bar .button.menu-button:backdrop,
       .header-bar .button.text-button:backdrop,
       .header-bar .button.image-button:backdrop,
       .header-bar .button.linked:backdrop,
+      .header-bar .button.titlebutton:backdrop,
       .header-bar .button.flat:backdrop {
         background-color: transparent;
         background-image: none;
         text-shadow: none;
         color: rgba(255, 255, 255, 0.5); }
-      .titlebar:not(headerbar) .button.back-button:hover, .titlebar:not(headerbar) .button.suggested-action:hover, .titlebar:not(headerbar) .button.menu-button:hover, .titlebar:not(headerbar) .button.text-button:hover, .titlebar:not(headerbar) .button.image-button:hover, .titlebar:not(headerbar) .button.linked:hover, .titlebar:not(headerbar) .button.flat:hover,
+      .titlebar:not(headerbar) .button.back-button:hover, .titlebar:not(headerbar) .button.suggested-action:hover, .titlebar:not(headerbar) .button.menu-button:hover, .titlebar:not(headerbar) .button.text-button:hover, .titlebar:not(headerbar) .button.image-button:hover, .titlebar:not(headerbar) .button.linked:hover, .titlebar:not(headerbar) .button.titlebutton:hover, .titlebar:not(headerbar) .button.flat:hover,
       .header-bar .button.back-button:hover,
       .header-bar .button.suggested-action:hover,
       .header-bar .button.menu-button:hover,
       .header-bar .button.text-button:hover,
       .header-bar .button.image-button:hover,
       .header-bar .button.linked:hover,
+      .header-bar .button.titlebutton:hover,
       .header-bar .button.flat:hover {
         background-image: none;
         background-color: rgba(0, 0, 0, 0.15);
@@ -2702,35 +2705,6 @@ GraniteWidgetsWelcome {
       .header-bar .button:insensitive GtkImage,
       .header-bar .button:insensitive:backdrop GtkImage {
         -gtk-image-effect: dim; }
-    .titlebar:not(headerbar) .button.titlebutton,
-    .header-bar .button.titlebutton {
-      background-color: transparent;
-      background-image: none;
-      border-radius: 50%;
-      border: none;
-      box-shadow: none;
-      icon-shadow: none;
-      margin: 0;
-      padding: 1px;
-      text-shadow: none;
-      color: #ffffff; }
-      .titlebar:not(headerbar) .button.titlebutton:hover,
-      .header-bar .button.titlebutton:hover {
-        background-color: rgba(255, 255, 255, 0.1);
-        color: white; }
-      .titlebar:not(headerbar) .button.titlebutton:backdrop,
-      .header-bar .button.titlebutton:backdrop {
-        background-color: transparent;
-        color: rgba(255, 255, 255, 0.5); }
-      .titlebar:not(headerbar) .button.titlebutton:active,
-      .header-bar .button.titlebutton:active {
-        background-color: #ffffff;
-        color: #546e7a;
-        border-radius: 50%;
-        box-shadow: none; }
-        .titlebar:not(headerbar) .button.titlebutton:active GtkImage,
-        .header-bar .button.titlebutton:active GtkImage {
-          color: #546e7a; }
     .titlebar:not(headerbar) .button.menu-button .menu .menuitem GtkLabel,
     .header-bar .button.menu-button .menu .menuitem GtkLabel {
       color: #444; }

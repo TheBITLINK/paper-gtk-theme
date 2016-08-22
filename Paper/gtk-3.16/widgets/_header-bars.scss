@@ -86,7 +86,7 @@
   .maximized & { &:backdrop, & { border-radius: 0; }} // squared corners when the window is maximized or tiled
 
   &.default-decoration {
-    padding: 6px;
+    padding: 0 8px;
     background-color: $headerbar_bg_color;
     color: $headerbar_fg_color;
 
@@ -187,6 +187,7 @@
     &.text-button,
     &.image-button,
     &.linked,
+    &.titlebutton,
     &.flat {
       background-color: transparent;
       background-image: none;
@@ -283,41 +284,6 @@
 
       GtkImage {
         -gtk-image-effect: dim;
-      }
-    }
-
-    // Title Button
-    &.titlebutton {
-      background-color:transparent;
-      background-image: none;
-      border-radius:50%;
-      border: none;
-      box-shadow: none;
-      icon-shadow: none;
-      margin: 0;
-      padding: 1px;
-      text-shadow: none;
-      color:$headerbar_fg_color;
-
-      &:hover {
-        background-color:transparentize($headerbar_fg_color, 0.9);
-        color:lighten($headerbar_fg_color, 10%);
-      }
-
-      &:backdrop {
-        background-color:transparent;
-        color:$backdrop_headerbar_fg_color;
-      }
-
-      &:active {
-        background-color:$headerbar_fg_color;
-        color:$headerbar_bg_color;
-        border-radius:50%;
-        box-shadow:none;
-
-        GtkImage {
-          color:$headerbar_bg_color;
-        }
       }
     }
 
